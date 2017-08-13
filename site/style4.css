@@ -1,0 +1,68 @@
+body
+{ 
+	background-image: url(fon.jpg)
+}
+
+#header 
+{ 
+	background-image: url(head2.png); 
+	width:1196px; 
+	height:240px; 
+} 
+#menu 
+{ 
+	background: rosybrown; 
+	width:200px; 
+	height:1000px; 
+	position:absolute; 
+	left:78px; 
+} 
+#content 
+{ 
+	background: peachpuff; 
+	width:956px; 
+	height:1000px; 
+	position:absolute; 
+	right:78px;  
+	text-align: justify; 
+	padding:20px;
+	font-family: arial; 
+	text-indent:20px;
+
+} 
+#footer 
+{ 
+	background: darkslateblue; 
+	width:1196px; 
+	height:30px; 
+	position:absolute; 
+	top:1230px; 
+	left:78px;
+	text-align:center; 
+} 
+
+
+	.one, .two /* надпись Австралия в шапке*/
+	{
+		position: relative; 
+		font-family: arial;
+		text-align: center
+	} 
+	.one
+	{
+		font-size: 50px; 
+		color: springgreen 
+	}
+	.two
+	{
+		margin-top: -55px; 
+		margin-left: 8px; 
+		color: green; 
+		font-size: 50px;
+	}
+	.one { z-index: 2; }
+	.two { z-index: 1 }
+
+	
+
+	
