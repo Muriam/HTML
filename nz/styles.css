@@ -1,0 +1,67 @@
+
+body
+{
+	background-image: url(fon.jpg)
+}
+
+p
+{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+video
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+h3
+{
+	padding-left: 5%;
+}
+
+#header
+{
+	background-image: url(volcano.jpg);
+	height: 250px;
+	width: 80%;
+}
+
+#menu
+{
+	background: Thistle;
+	width: 80%;
+	margin: 0 auto;   /* цертирование блока */
+}
+
+#content
+{
+	background: LightSteelBlue;
+	margin: 0 auto;   /* цертирование блока по центру */
+	width: 80%;
+	height: 100%;
+}
+
+
+
+	.one, .two /*надпись "Музыка стран мира" в шапке*/
+	{
+		position: relative;
+		font-family: arial;
+		text-align: center
+	}
+	.one
+	{
+		font-size: 50px;
+		color: springgreen
+	}
+	.two
+	{
+		margin-top: -30px;
+		margin-left: 6px;
+		color: DarkGreen;
+		font-size: 50px;
+	}
+	.one { z-index: 2; }
+	.two { z-index: 1 }
