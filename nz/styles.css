@@ -28,40 +28,93 @@ h3
 	width: 80%;
 }
 
-#menu
+
+
+
+#menu1
 {
-	background: Thistle;
+	background: silver;
 	width: 80%;
 	margin: 0 auto;   /* цертирование блока */
 }
 
+#nav li
+{
+	float: left;
+	position: relative;
+	list-style: none;
+	background: Thistle;
+	width: 185px;
+}
+#nav a
+{
+    text-decoration: none;
+    display: block; 			/* делаю блочным элементов тег "a" */
+    padding: 35px 65px;
+    color: white;
+}
+#active a, #nav li:hover > a
+{
+    background: MediumAquamarine;
+}
+#nav ul 
+{
+    visibility: hidden; /* скрываю выпадающее меню */
+    padding: 0; 
+    position: absolute;
+}
+#nav li:hover > ul
+{
+    visibility: visible; /* показывается выпадающее меню при наведении */
+    position: relative;
+}
+#nav ul a
+{
+    padding: 15px 60px; /* делаю отступы выпадающего меню меньше от основного */
+}
+#nav ul li:hover
+{
+    background: #d92a2a;
+}
+#nav li:first-child:hover > ul
+{
+    left: 0px; /* при наведении на первый элемент чтобы не съежало выпадающее меню */
+}
+
+
+
+
+
+
 #content
 {
 	background: LightSteelBlue;
-	margin: 0 auto;   /* цертирование блока по центру */
+	margin: 0 auto;   /* центрирование блока по центру */
 	width: 80%;
 	height: 100%;
 }
 
 
 
-	.one, .two /*надпись "Музыка стран мира" в шапке*/
-	{
-		position: relative;
-		font-family: arial;
-		text-align: center
-	}
-	.one
-	{
-		font-size: 50px;
-		color: springgreen
-	}
-	.two
-	{
-		margin-top: -30px;
-		margin-left: 6px;
-		color: DarkGreen;
-		font-size: 50px;
-	}
-	.one { z-index: 2; }
-	.two { z-index: 1 }
+
+
+.one, .two /*надпись "НОВАЯ ЗЕЛАНДИЯ. НА КРАЮ ОКЕАНОВ" в шапке*/
+{
+	position: relative;
+	font-family: arial;
+	text-align: center
+}
+.one
+{
+	font-size: 50px;
+	color: springgreen
+}
+.two
+{
+	margin-top: -50px;
+	margin-left: 6px;
+	color: DarkGreen;
+	font-size: 50px;
+}
+.one { z-index: 2; }
+.two { z-index: 1 }
