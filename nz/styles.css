@@ -1,4 +1,3 @@
-
 body
 {
 	background-image: url(fon.jpg)
@@ -16,16 +15,13 @@ video
 	padding-bottom: 5%;
 }
 
-h3
-{
-	padding-left: 5%;
-}
 
 #header
 {
 	background-image: url(volcano.jpg);
 	height: 250px;
 	width: 80%;
+	margin: 0 auto;
 }
 
 
@@ -33,9 +29,8 @@ h3
 
 #menu1
 {
-	background: silver;
 	width: 80%;
-	margin: 0 auto;   /* цертирование блока */
+	margin: 0 auto;   			/* центрирование блока */
 }
 
 #nav li
@@ -59,18 +54,18 @@ h3
 }
 #nav ul 
 {
-    visibility: hidden; /* скрываю выпадающее меню */
-    padding: 0; 
+    visibility: hidden; 		/* скрываю выпадающее меню */
+	padding: 0;
     position: absolute;
 }
 #nav li:hover > ul
 {
-    visibility: visible; /* показывается выпадающее меню при наведении */
-    position: relative;
+    visibility: visible; 		/* показывается выпадающее меню при наведении */
+    position: absolute;
 }
 #nav ul a
 {
-    padding: 15px 60px; /* делаю отступы выпадающего меню меньше от основного */
+    padding: 15px 60px; 		/* делаю отступы выпадающего меню меньше от основного */
 }
 #nav ul li:hover
 {
@@ -78,7 +73,7 @@ h3
 }
 #nav li:first-child:hover > ul
 {
-    left: 0px; /* при наведении на первый элемент чтобы не съежало выпадающее меню */
+    left: 0px; 					/* при наведении на первый элемент чтобы не съежало выпадающее меню */
 }
 
 
@@ -89,7 +84,7 @@ h3
 #content
 {
 	background: LightSteelBlue;
-	margin: 0 auto;   /* центрирование блока по центру */
+	margin: 0 auto;   			/* центрирование блока по центру */
 	width: 80%;
 	height: 100%;
 }
