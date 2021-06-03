@@ -24,13 +24,20 @@ video
 	margin: 0 auto;
 }
 
+#icon
+{
+	position: relative;
+	top: 146px;	        	  	/* сдвигает картинку сверху на 146 px */
+	border: 3px Thistle solid;	/* рамка вокруг картинки */
+}
+
 
 
 
 #menu1
 {
 	width: 80%;
-	margin: 0 auto;   			/* центрирование блока */
+	margin: 0 auto;   			/* центрирование блока меню */
 }
 
 #nav li
@@ -39,12 +46,12 @@ video
 	position: relative;
 	list-style: none;
 	background: Thistle;
-	width: 185px;
+	width: 186px;
 }
 #nav a
 {
     text-decoration: none;
-    display: block; 			/* делаю блочным элементов тег "a" */
+    display: block; 			/* делаю блочным элементом тег "a" */
     padding: 35px 65px;
     color: white;
 }

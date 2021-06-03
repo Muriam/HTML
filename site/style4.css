@@ -6,39 +6,39 @@ body
 #header 
 { 
 	background-image: url(head2.png); 
-	width:1196px; 
-	height:240px; 
+	width: 1196px; 
+	height: 240px; 
 } 
 #menu 
 { 
 	background: rosybrown; 
-	width:200px; 
-	height:1000px; 
-	position:absolute; 
-	left:78px; 
+	width: 200px; 
+	height: 1000px; 
+	position: absolute; 
+	left: 139px; 
 } 
 #content 
 { 
 	background: peachpuff; 
-	width:956px; 
-	height:1000px; 
-	position:absolute; 
-	right:78px;  
+	width: 956px; 
+	height:950px; 
+	position: absolute; 
+	right: 138px;  
 	text-align: justify; 
-	padding:20px;
+	padding: 20px;
 	font-family: arial; 
-	text-indent:20px;
+	text-indent: 20px;
 
 } 
 #footer 
 { 
 	background: darkslateblue; 
-	width:1196px; 
-	height:30px; 
-	position:absolute; 
-	top:1230px; 
-	left:78px;
-	text-align:center; 
+	width: 1195px; 
+	height: 30px; 
+	position: absolute; 
+	top: 1230px; 
+	left: 139px;
+	text-align: center; 
 } 
 
 
