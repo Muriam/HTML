@@ -120,3 +120,22 @@ video
 }
 .one { z-index: 2; }
 .two { z-index: 1 }
+
+
+
+.slider
+{
+	width: 800px;
+	height: 430px;
+	/* overflow: hidden; */
+	border: 7px solid green ;
+}
+
+.middle
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
