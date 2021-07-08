@@ -27,7 +27,7 @@ video
 #icon
 {
 	position: relative;
-	top: 146px;	        	  	/* сдвигает картинку сверху на 146 px */
+	top: 138px;	        	  	/* сдвигает картинку сверху на 146 px */
 	border: 3px Thistle solid;	/* рамка вокруг картинки */
 }
 
@@ -36,8 +36,12 @@ video
 
 #menu1
 {
-	width: 80%;
-	margin: 0 auto;   			/* центрирование блока меню */
+	/*width: 80%;*/
+	/*margin: 0 auto;*/   			/* центрирование блока меню */
+	clear: both;
+	margin-left: 106px;
+	position: absolute;
+	top: 244px;
 }
 
 #nav li
@@ -46,7 +50,7 @@ video
 	position: relative;
 	list-style: none;
 	background: Thistle;
-	width: 186px;
+	width: 194px;
 }
 #nav a
 {
@@ -64,6 +68,8 @@ video
     visibility: hidden; 		/* скрываю выпадающее меню */
 	padding: 0;
     position: absolute;
+    display: inline-block;
+    width: 100%;
 }
 #nav li:hover > ul
 {
@@ -83,7 +89,10 @@ video
     left: 0px; 					/* при наведении на первый элемент чтобы не съежало выпадающее меню */
 }
 
-
+#clearfix
+{
+	clear: both;
+}
 
 
 
@@ -94,6 +103,7 @@ video
 	margin: 0 auto;   			/* центрирование блока по центру */
 	width: 80%;
 	height: 100%;
+	margin-top: 91px;
 }
 
 
@@ -134,8 +144,9 @@ video
 .middle
 {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	/*top: 50%;*/
+	left: 23%;
+	/*transform: translate(-50%, -50%);*/
 }
 
