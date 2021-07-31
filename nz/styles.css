@@ -1,111 +1,62 @@
 body
 {
-	background-image: url(fon.jpg)
+	background-image: url(fon.jpg);
 }
 
-p
-{
-	padding-left: 5%;
-	padding-right: 5%;
+.flexbox_container
+{	
+	border: 2px solid purple;
+	margin-top: 20px;             
+	height: 1500px;
+	display: flex;
+	flex-direction: column; 	/* расположить div-ы вертикально, в колонку */
+    align-items: center;        /* расположить div-ы по-центру */
+    height: 100%;
 }
-
-video
-{
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
-
 
 #header
 {
-	background-image: url(volcano.jpg);
-	height: 250px;
 	width: 80%;
+	border: 2px solid orange;
+	align-items: center;
+	background: url(volcano.jpg) no-repeat;
+    background-size: cover;
+	height: 250px;
 	margin: 0 auto;
 }
-
-#icon
+.block_2
 {
-	position: relative;
-	top: 138px;	        	  	/* сдвигает картинку сверху на 146 px */
-	border: 3px Thistle solid;	/* рамка вокруг картинки */
+	width: 80%;
+	border: 2px solid orange;
+	align-items: center
 }
-
-
-
-
-#menu1
-{
-	/*width: 80%;*/
-	/*margin: 0 auto;*/   			/* центрирование блока меню */
-	clear: both;
-	margin-left: 106px;
-	position: absolute;
-	top: 244px;
-}
-
-#nav li
-{
-	float: left;
-	position: relative;
-	list-style: none;
-	background: Thistle;
-	width: 194px;
-}
-#nav a
-{
-    text-decoration: none;
-    display: block; 			/* делаю блочным элементом тег "a" */
-    padding: 35px 65px;
-    color: white;
-}
-#active a, #nav li:hover > a
-{
-    background: MediumAquamarine;
-}
-#nav ul 
-{
-    visibility: hidden; 		/* скрываю выпадающее меню */
-	padding: 0;
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-}
-#nav li:hover > ul
-{
-    visibility: visible; 		/* показывается выпадающее меню при наведении */
-    position: absolute;
-}
-#nav ul a
-{
-    padding: 15px 60px; 		/* делаю отступы выпадающего меню меньше от основного */
-}
-#nav ul li:hover
-{
-    background: #d92a2a;
-}
-#nav li:first-child:hover > ul
-{
-    left: 0px; 					/* при наведении на первый элемент чтобы не съежало выпадающее меню */
-}
-
-#clearfix
-{
-	clear: both;
-}
-
-
-
-
 #content
 {
+	width: 80%;
+	border: 2px solid orange;
+	align-items: center;
 	background: LightSteelBlue;
 	margin: 0 auto;   			/* центрирование блока по центру */
 	width: 80%;
 	height: 100%;
-	margin-top: 91px;
 }
 
+
+
+.slider
+{
+	width: 800px;
+	min-height: 430px;
+	overflow: hidden;
+	border: 7px solid green ;
+}
+
+.middle
+{
+	position: absolute;
+	margin: 0 auto;
+	left: 23%;
+}
 
 
 
@@ -123,8 +74,8 @@ video
 }
 .two
 {
-	margin-top: -50px;
-	margin-left: 6px;
+	margin-top: -54px;
+	margin-left: 10px;
 	color: DarkGreen;
 	font-size: 50px;
 }
@@ -132,21 +83,4 @@ video
 .two { z-index: 1 }
 
 
-
-.slider
-{
-	width: 800px;
-	height: 430px;
-	/* overflow: hidden; */
-	border: 7px solid green ;
-}
-
-.middle
-{
-	position: absolute;
-	margin: 0 auto;
-	/*top: 50%;*/
-	left: 23%;
-	/*transform: translate(-50%, -50%);*/
-}
 

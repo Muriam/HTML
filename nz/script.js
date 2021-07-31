@@ -10,3 +10,7 @@ function changeText1()
     var elem = document.getElementById("content");
     elem.innerHTML = "Изначально маори проживали на территории северных островов.";
 }
+
+
+
+
