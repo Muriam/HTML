@@ -3,18 +3,33 @@ body
 	background-image: url(fon.jpg);
 }
 
+p
+{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+video
+{
+	width: 75%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
 .flexbox_container
 {	
+	display: flex;              /* применение flexbox */
 	border: 2px solid purple;
 	margin-top: 20px;             
 	height: 1500px;
-	display: flex;
 	flex-direction: column; 	/* расположить div-ы вертикально, в колонку */
     align-items: center;        /* расположить div-ы по-центру */
     height: 100%;
 }
 
-#header
+
+
+.header
 {
 	width: 80%;
 	border: 2px solid orange;
@@ -24,40 +39,95 @@ body
 	height: 250px;
 	margin: 0 auto;
 }
-.block_2
+
+.menu
 {
+	display: flex;
 	width: 80%;
+	height: 40px;
 	border: 2px solid orange;
-	align-items: center
+	margin: 0;
+    padding: 0;
+
 }
+.menu li
+{
+	width: 194px;
+	list-style: none;
+	background: #bd939d;
+	position: relative;
+	z-index: 2;
+}
+.menu a
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.menu a:hover
+{
+	background: MediumAquamarine;
+	height: 40px;
+}
+.menu ul
+{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	padding: 0;
+	height: 38px;
+}
+.menu li:hover ul
+{
+	display: block;
+}
+
 #content
 {
-	width: 80%;
 	border: 2px solid orange;
 	align-items: center;
 	background: LightSteelBlue;
-	margin: 0 auto;   			/* центрирование блока по центру */
-	width: 80%;
-	height: 100%;
+	margin: 0 auto;   			 
+    width: 80%; 
+    height: 2500px;
 }
-
 
 
 .slider
 {
-	width: 800px;
 	min-height: 430px;
 	overflow: hidden;
-	border: 7px solid green ;
+	border: 7px solid green;
+	margin: 0 auto;
+	width: 55%; /* адаптивная рамка по отношению к блоку div (id=content) */
 }
-
 .middle
 {
 	position: absolute;
 	margin: 0 auto;
 	left: 23%;
 }
-
+.navigation
+{
+	position: absolute;
+	bottom: 16px;
+	display: flex;
+}
+.bar
+{
+	height: 8px;
+	width: 30px;
+	margin: 6px;
+	cursor: pointer;
+	background-color: grey;
+}
 
 
 
@@ -65,12 +135,12 @@ body
 {
 	position: relative;
 	font-family: arial;
-	text-align: center
+	text-align: center;
 }
 .one
 {
 	font-size: 50px;
-	color: springgreen
+	color: springgreen;
 }
 .two
 {
@@ -81,6 +151,3 @@ body
 }
 .one { z-index: 2; }
 .two { z-index: 1 }
-
-
-
