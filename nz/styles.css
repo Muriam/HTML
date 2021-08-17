@@ -19,7 +19,7 @@ video
 .flexbox_container
 {	
 	display: flex;              /* применение flexbox */
-	border: 2px solid purple;
+	/* border: 2px solid purple; */
 	margin-top: 20px;             
 	height: 1500px;
 	flex-direction: column; 	/* расположить div-ы вертикально, в колонку */
@@ -32,7 +32,7 @@ video
 .header
 {
 	width: 80%;
-	border: 2px solid orange;
+	border: 2px solid grey;
 	align-items: center;
 	background: url(volcano.jpg) no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@ video
 	display: flex;
 	width: 80%;
 	height: 40px;
-	border: 2px solid orange;
+	border: 2px solid grey;
 	margin: 0;
     padding: 0;
 
@@ -91,7 +91,7 @@ video
 
 #content
 {
-	border: 2px solid orange;
+	border: 2px solid grey;
 	align-items: center;
 	background: LightSteelBlue;
 	margin: 0 auto;   			 
@@ -102,33 +102,88 @@ video
 
 .slider
 {
-	min-height: 430px;
+	width: 65%;			/* адаптивная рамка по отношению к блоку div (id=content) */
+	height: 598px;
+	overflow: hidden;
 	overflow: hidden;
 	border: 7px solid green;
-	margin: 0 auto;
-	width: 55%; /* адаптивная рамка по отношению к блоку div (id=content) */
 }
 .middle
 {
 	position: absolute;
-	margin: 0 auto;
-	left: 23%;
+	top: 660px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-.navigation
+.navigation /* кнопки для навигации */
 {
 	position: absolute;
 	bottom: 16px;
 	display: flex;
+	left: 50%;
+	transform: translate(-50%);
 }
-.bar
+.bar /* внешний вид кнопок навигации */
 {
 	height: 8px;
-	width: 30px;
+	width: 25px;
 	margin: 6px;
-	cursor: pointer;
-	background-color: grey;
+	cursor: pointer;		/* расстояние между кнопками */
+	background-color: Fuchsia;
+	border-radius: 10px; 	/* чтоб были скругленные */
+	transition: all .4s ease;
+	border: 2px solid black; 
 }
-
+.bar:hover
+{
+	transform: scale(1.2);  /* увеличение размера кнопки при наведении курсора */
+	background-color: Lime;
+}
+input[name='r']
+{
+	position: absolute;
+	visibility: hidden; 	/* спрятать radioButton-ы */
+}
+.slides
+{
+	width: 600%;
+	height: 100%;
+	display: flex;
+}
+.slide
+{
+	width: 25%;
+	transition: all .6s ease;
+}
+.slide img
+{
+	width: 100%;
+	height: 100%;
+}
+#r1:checked ~ .s1   		/* переключение слайдов */
+{
+	margin-left: 0;
+}
+#r2:checked ~ .s2
+{
+	margin-left: -20%;
+}
+#r3:checked ~ .s3
+{
+	margin-left: -50%;
+}
+#r4:checked ~ .s4
+{
+	margin-left: -75%;
+}
+#r5:checked ~ .s5
+{
+	margin-left: -100%;
+}
+#r6:checked ~ .s6
+{
+	margin-left: -125%;
+}
 
 
 .one, .two /*надпись "НОВАЯ ЗЕЛАНДИЯ. НА КРАЮ ОКЕАНОВ" в шапке*/
