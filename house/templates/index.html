@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Аренда квартиры</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+{% block content %}
+<div id="content" style="height: 100%;">
+
+
+  <pre><b>
+    Уважаемые гости!
+    Предлагаем Вашему вниманию комфортную квартиру
+    на НАБЕРЕЖНОЙ города Новосибирска
+    в элитном жилом комплексе "МИХАЙЛОВСКИЙ"!
+
+    Мы изучаем рынок посуточной аренды, поэтому уверены,
+    нас выбирают лучшие!!!
+  <b></pre>
+  <br><br>
+
+  <div id="slider">
+      <figure>
+          <img src="static/p1.jpeg">
+          <img src="static/p2.jpeg">
+          <img src="static/p3.jpeg">
+          <img src="static/p4.jpeg">
+          <img src="static/p5.jpeg">
+          <img src="static/p6.jpeg">
+          <img src="static/p7.jpeg">
+          <img src="static/p8.jpeg">
+      </figure>
+  </div>
+
+
+  <pre><b><i>
+                ДОМ
+  • Дом с изысканным и уникальным
+    дизайном располагается внутри парка.
+  • Всё общественное пространство для
+    Вашей безопасности находится под
+    круглосуточным видеонаблюдением.
+  • Закрытый двор без машин с уютной
+    зоной отдыха.
+  </b></i><pre>
+  <br><br>
+
+  <img src="static/p2.jpeg" width="400" height="280" hspace="30" vspace="10" align="right">
+  <pre><b><i>
+              КВАРТИРА
+  • Квартира 44 кв.м + лоджия 15 кв.м
+  • В квартире выполнен стильный ремонт
+  • Есть абсолютно вся необходимая мебель
+    и бытовая техника ПРЕМИУМ КЛАССА
+  • Квартира максимально укомплектована
+  • Большинство бытовой техники
+    управляется пультами и приложениями
+    на смартфоне
+  </b></i><pre>
+  <br><br>
+
+  <img src="static/p3.jpeg" width="400" height="280" hspace="30" vspace="10" align="right">
+  <pre><p>
+            УДОБСТВА В КВАРТИРЕ
+  • Установлен кондиционер
+  • Самый мощный Wi-Fi роутер
+  • Домофон с удалённым доступом
+  • Электрокамин со звуком костра
+  • Теплый пол на лоджии
+  • Огромные панорамные окна
+   с видом на набережную и Обь
+  • Спальных мест 2 + 2 + 1
+  <p><pre>
+  <br><br>
+
+
+
+</div>
+
+<button class="btnRight">Right</button>
+<script src="script.js" class="btnRight"></script>
+{% endblock %}
+</body>
+
+</html>

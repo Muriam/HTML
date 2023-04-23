@@ -1,0 +1,75 @@
+body
+{
+    background-image: url(photo1.jpg);
+    background-size: 100%;        /* чтоб фоновая картинка не повторялась и растянулась */
+
+}
+
+#content
+{
+  background: rgba(242, 232, 201, 0.5);
+  /* opacity: 0.6;             /*  прозрачность */
+  margin: 0 auto;
+  width: 75%;
+  height: 100%;
+  font-family: cursive;
+  font-size: 25px;         /*   размер шрифта */
+  line-height: 25px;       /*   межстрочный интервал */
+}
+
+p
+{
+  margin-left: 3%;      /* отступы текста от края бежа */
+  margin-right: 3%;
+}
+
+
+#slider
+{
+    overflow: hidden;
+    width: 500px;
+    height: 280px;
+    border: 2px solid rebeccapurple;
+    margin: 0 auto;
+}
+#slider figure
+{
+    position: relative;
+    width: 800%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+}
+#slider figure img
+{
+    float: left;
+    width: 500px;    /* 600 */
+    height: 280px;   /* 400 */
+}
+
+
+/*
+3 секунды картинка стоит на месте, за 2 секунды перелистывается.
+3 / 40 x 100 = 7.5
+2 / 40 x 100 = 5
+0% + 7.5 + 5 + 7.5 + 5 + 7.5 + 5 + 7.5 + 5 + 7.5 + 5 + 7.5 + 5 + 7.5 + 5 + 7.5 + 5 = 100% */
+@keyframes slider
+{
+    0% { left: 0; }
+    7.5% { left: 0; }
+    12.5% { left: -100%; }
+    20% { left: -100%; }
+    25% { left: -200%; }
+    32.5% { left: -200%; }
+    37.5% { left: -300%; }
+    45% { left: -300%; }
+    50% { left: -400%; }
+    57.5% { left: -400%; }
+    62.5% { left: -500%; }
+    70% { left: -500%; }
+    75% { left: -600%; }
+    82.5% { left: -600%; }
+    87.5% { left: -700%; }
+    95% { left: -700%; }
+    100% { left: 0; }
+}
