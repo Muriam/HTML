@@ -26,22 +26,8 @@ body {
 }
 
 
-
-
-/* ФЛЕКС БОКС */
-/*
-.section {
-  display: flex;
-  flex-direction: row; Устанавливаем направление контейнера в горизонтальную ось 
-  justify-content: space-between; Распределяем пространство между элементами 
-  align-items: center;  Выравниваем элементы по центру по вертикали
-} */
-
 #slider {
   flex: 1;
-  /* Растягиваем слайдер, чтобы занять все оставшееся пространство */
-  margin-right: 20px;
-  /* Добавляем отступ справа для разделения слайдера и текста */
   border: 2px solid green;
 }
 
@@ -55,8 +41,6 @@ body {
 
 /*  СЛАЙДЕР */
 #viewport {
-  width: 67vw;
-  height: 44vw;
   overflow: hidden;
 }
 
@@ -64,22 +48,19 @@ body {
   position: relative;
   transition: 500ms;
   width: calc(100% * 5);
-  height: 450px;
   display: flex;
   justify-content: start;
   flex-wrap: nowrap;
 }
 
 .slide {
-  width: 100%;
-  height: 450px;
+
 }
 
 .slide img {
-  width: 67vw;
-  height: 44vw;
   object-fit: cover;
   object-position: 0;
+  width: 100%;     /* чтоб картинка не вылазила за пределы дива !!! */
 }
 
 #viewSlider {
@@ -89,7 +70,5 @@ body {
 }
 
 .viewSlide {
-  width: 20px;
-  height: 20px;
   background-color: thistle;
 }
