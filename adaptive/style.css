@@ -21,7 +21,6 @@ body {
   display: flex;
   /* flexbox */
   flex-direction: row;
-  align-items: center;
   border: 2px solid purple;
 }
 
@@ -37,12 +36,10 @@ body {
   border: 2px solid blue;
 }
 
-
-
-/*  СЛАЙДЕР */
 #viewport {
-  overflow: hidden;
+  overflow: hidden; /*чтоб картинки, листаясь, не показывали за пределами зеленой рамки*/
 }
+
 
 .slider {
   position: relative;
@@ -53,9 +50,6 @@ body {
   flex-wrap: nowrap;
 }
 
-.slide {
-
-}
 
 .slide img {
   object-fit: cover;
