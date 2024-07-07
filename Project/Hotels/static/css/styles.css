@@ -1,0 +1,51 @@
+body {
+    background-color: pink; 
+}
+
+.container 
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.vertical-blocks 
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.block-A, .block-B 
+{
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.horizontal-blocks 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-C, .block-D 
+{
+    background-color: #e6e6e6;
+    padding: 20px;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) 
+{
+    .horizontal-blocks {
+        flex-direction: column;
+    }
+
+    .block-C, .block-D {
+        width: 100%;
+    }
+}
