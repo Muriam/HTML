@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;    /* column для вертикального расположения */
+  flex: 1;
+  min-height: 100vh;         /* Минимальная высота - вся высота */
+  border: 1px solid black;
+  background-color: #D5C2C8;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  margin: 5px;
+}
+
+.top-bar {
+  background-color: green;
+  height: 7%;              /* Толщина полоски Хедера */
+  width: 100%;             /* Занимает всю ширину контейнера */
+}
+
+.slider-container {
+    position: relative; /* Делаем родительский элемент позиционным */
+    width: 100%;
+    height: 200px; /* Или высота, соответствующая вашим изображениям */
+    overflow: hidden; /* Скрываем переполнение */
+}
+.slider {
+    position: absolute; /* Абсолютное позиционирование слайдов */
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: left 0.5s ease-in-out; /* Анимация */
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.slide:nth-child(n+2){ /* скрываем все слайды, кроме первого */
+    display:none;
+}
