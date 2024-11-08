@@ -20,6 +20,31 @@
 
     <main>
         {% block content %}
+
+        <form method="post" action="{% url 'func_post' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Отправить</button>
+        </form>
+        
+        <div class="flex-container">
+            <div class="flex-item">
+                <fieldset class="checkbox-container">
+                    <legend>Группа 1</legend>
+                    <!-- Чекбоксы из вашей формы -->
+                    {{ form.your_checkbox_1 }}
+                    {{ form.your_checkbox_2 }}
+                </fieldset>
+            </div>
+
+            <div class="flex-item">
+                <fieldset class="checkbox-container">
+                    <legend>Группа 2</legend>
+                    <!-- Другие чекбоксы -->
+                    {{ form.your_checkbox_3 }}
+                </fieldset>
+            </div>
+        </div>
         {% endblock %}
     </main>
 
