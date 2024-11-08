@@ -2,50 +2,42 @@ body {
     background-color: pink; 
 }
 
-.container 
-{
+.container {
+    display: flex;            /* Теперь контейнер - флекс-контейнер */
+    flex-wrap: wrap;          /* Перенос элементов на следующую строку при необходимости */
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    border: 2px solid purple;
 }
 
-.vertical-blocks 
-{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
+.flex-item {
+    background-color: #f2f2f2; /* Светло-серый фон для flex-item */
+    border: 2px solid blue;
+    margin-right: 10px;
+    padding: 10px;
+    flex: 1;
 
-.block-A, .block-B 
-{
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-bottom: 10px;
-}
+    /* АДАПТИВНОСТЬ */
+    width: 100%;               /* Занимаем всю ширину на маленьких экранах */   
 
-.horizontal-blocks 
-{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.block-C, .block-D 
-{
-    background-color: #e6e6e6;
-    padding: 20px;
-    width: 48%;
-    margin-bottom: 20px;
-}
-
-/* Медиа-запросы для адаптивности */
-@media (max-width: 768px) 
-{
-    .horizontal-blocks {
-        flex-direction: column;
+    /* Пример медиа-запроса для больших экранов */
+    @media (min-width: 768px) {
+        width: 50%;            /* Занимаем 50% ширины на больших экранах */
     }
 
-    .block-C, .block-D {
-        width: 100%;
+    @media (min-width: 1200px) {
+        width: 33.33%;          /* Занимаем 33.33% ширины на очень больших экранах */
     }
+}
+
+.checkbox-container {
+    background-color: #d3d3d3;  /* Серебристый фон для контейнера с чекбоксами */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container legend {
+    padding-bottom: 10px; 
 }
