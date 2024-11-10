@@ -20,15 +20,17 @@
 
     <main>
         {% block content %}
-
+<div class="both">
+    <div class="checkboxes"> 
         <form method="post" action="{% url 'func_post' %}">
-            {% csrf_token %}
-            {{ form.as_p }}
+            {% csrf_token %} 
+            {{ form.as_p }} 
             <button type="submit">Отправить</button>
         </form>
-        
-        <div class="flex-container">
-            <div class="flex-item">
+    </div>    
+        <div class="flex-container"> 
+
+            <div class="flex-item" style="background-color: aquamarine;">
                 <fieldset class="checkbox-container">
                     <legend>Группа 1</legend>
                     <!-- Чекбоксы из вашей формы -->
@@ -45,6 +47,7 @@
                 </fieldset>
             </div>
         </div>
+</div>    
         {% endblock %}
     </main>
 

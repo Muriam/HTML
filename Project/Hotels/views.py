@@ -3,7 +3,7 @@ from django import forms
 
 # Определяем форму
 class MyForm(forms.Form):
-    checkbox1 = forms.BooleanField(required=False, label="Чекбокс 1")
+    checkbox1 = forms.BooleanField(label="Чекбокс 1")
     checkbox2 = forms.BooleanField(required=False, label="Чекбокс 2")
     checkbox3 = forms.BooleanField(required=False, label="Чекбокс 3")
 

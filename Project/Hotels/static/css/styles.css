@@ -2,33 +2,12 @@ body {
     background-color: pink; 
 }
 
-.container {
-    display: flex;            /* Теперь контейнер - флекс-контейнер */
-    flex-wrap: wrap;          /* Перенос элементов на следующую строку при необходимости */
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid purple;
-}
-
-.flex-item {
-    background-color: #f2f2f2; /* Светло-серый фон для flex-item */
-    border: 2px solid blue;
-    margin-right: 10px;
-    padding: 10px;
-    flex: 1;
-
-    /* АДАПТИВНОСТЬ */
-    width: 100%;               /* Занимаем всю ширину на маленьких экранах */   
-
-    /* Пример медиа-запроса для больших экранов */
-    @media (min-width: 768px) {
-        width: 50%;            /* Занимаем 50% ширины на больших экранах */
-    }
-
-    @media (min-width: 1200px) {
-        width: 33.33%;          /* Занимаем 33.33% ширины на очень больших экранах */
-    }
+.flex-container {
+    display: flex;
+    align-items: center;
+    border: 3px solid yellow; 
+    flex-direction: column;    /* Изменяет направление флекс-элементов на вертикальное */
+    width: 50%;
 }
 
 .checkbox-container {
@@ -36,8 +15,32 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 7%; /* Добавляет отступ справа от контейнера с чекбоксами */
 }
 
-.checkbox-container legend {
-    padding-bottom: 10px; 
+.both {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid green;
+}
+
+.checkboxes {
+    border: 2px solid red;
+}
+
+.flex-item {
+    background-color: #f2f2f2; /* Светло-серый фон для flex-item */
+    border: 2px solid blue;
+    padding: 10px;
+    flex: 1;
+    width: 100%; /* Занимаем всю ширину на маленьких экранах */
+
+    /* Пример медиа-запроса для больших экранов 
+    @media (min-width: 768px) {
+        width: 50%;  Занимаем 50% ширины на больших экранах 
+    }
+
+    @media (min-width: 1200px) {
+        width: 33.33%;  Занимаем 33.33% ширины на очень больших экранах */
+    }
 }
