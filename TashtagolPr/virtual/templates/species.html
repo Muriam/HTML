@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div id="content">
+
+<div id="content">
+    <div class="items">
+        <form action="" method="POST">
+            {{ form1.hidden_tag() }}
+
+                <div class="item">
+                    {{ form1.kingdom.label }}  {{ form1.kingdom() }}
+                    <br><br>
+                    {{ form1.button }}
+                    <br><br>
+                    <b>
+                    {% for species in species_result %}
+                        {{ species.name }} <br>
+                    {% endfor %}
+                    </b>
+                </div>
+
+            {{ form2.find(value=form2.find.data, type="hidden") }}
+        </form>
+
+        <form action="" method="POST">
+            {{ form2.hidden_tag() }}
+
+                <div class="item">
+                    <i>Введите вид растения или животного</i>
+                    <br><br>
+                    {{ form2.find.label }}  {{ form2.find() }}
+                    <br><br>
+                    {{ form2.findButton }}
+                    <br><br>
+                    {% for species in search %}
+                        <i>вид</i> <b>{{ species.name }}</b> <br> <i>род</i> {{ species.genus.name }} <br>
+                        <i>семейство</i> {{ species.family.name }} <br> <i>порядок/отряд</i> {{ species.order.name }}
+                        <br> <i>класс</i> {{ species.class.name }} <br> <i>отдел/тип</i>
+                        {{ species.divisionOrPhylum.name }} <br> <i>царство</i> {{ species.kingdom.name }}
+                    {% endfor %}
+                </div>
+
+            {{ form2.kingdom(value=form1.kingdom.data, type="hidden") }}
+        </form>
+
+    </div>
+</div>
+
+</div>
+{% endblock %}
